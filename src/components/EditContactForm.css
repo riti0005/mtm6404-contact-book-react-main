@@ -1,0 +1,82 @@
+.edit-contact-form-card {
+  background-color: #2E2926 !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
+}
+
+.form-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row .col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.btn.success {
+  background-color: #4CAF50;
+}
+
+.btn.error {
+  background-color: #f44336;
+}
+
+.spinner-border {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .form-heading {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    padding: 8px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

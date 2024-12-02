@@ -1,0 +1,186 @@
+.contact-details-card {
+  background-color: #2E2926 !important;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactdetails--heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px #900c3f, 0 0 25px #900c3f !important;
+  background: linear-gradient(135deg, #c70039, #c70039) !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+}
+
+.contact-details-info {
+  margin-bottom: 30px;
+}
+
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details-item {
+  font-weight: 500;
+  display: flex;
+  padding: 0.2rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.contact-details-item:hover {
+  background-color: #383333;
+}
+
+.contact-details-item strong {
+  font-weight: bold;
+  color: #333;
+  min-width: 150px;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+
+.contact-details-item span {
+  color: #444;
+  font-weight: 400;
+  text-align: right;
+  word-break: break-word;
+}
+
+@media (max-width: 767px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-details-item {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .contact-details-item strong {
+    min-width: unset;
+    margin-right: 0;
+  }
+}
+
+.spinnerx {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn.loading {
+  padding-left: 35px; /* Adjust padding for spinner */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-spinnerx {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;  /* Smaller size for spinner */
+  height: 20px; /* Smaller size for spinner */
+  border-width: 3px; /* Thinner border */
+  animation: spin 1s linear infinite; /* Faster animation */
+}
+
+.contact-details-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-details-actions .btn {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-details-actions .btn-primary {
+  background: linear-gradient(135deg, #1a73e8 0%, #0c4fa2 100%);
+  border: 2px solid #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details-actions .btn-primary:hover {
+  background-color: #0d54b2;
+}
+
+.contact-details-actions .btn-secondary {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.contact-details-actions .btn-danger {
+  background: linear-gradient(135deg, #c70039 0%, #900c3f 100%);
+  border: 2px solid #c70039;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-details-actions .btn-danger:hover {
+  background-color: #900c3f;
+}
+
+.contact-details-actions .btn-danger:active .center-spinner {
+  width: 14px; /* Even smaller spinner on click */
+  height: 14px; /* Even smaller spinner on click */
+}
+
+.delete-statusx {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
